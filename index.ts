@@ -7,3 +7,15 @@ if (hasValue) {
 }
 
 let count: number = 10;
+let greeting: string = "Hello, TypeScript!";
+console.log(greeting);
+
+const person: {
+  name: string;
+  age: number;
+  isStudent: boolean;
+} = {
+  name: "Jack",
+  age: 21,
+  isStudent: true,
+};
