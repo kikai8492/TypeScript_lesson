@@ -23,3 +23,5 @@ const person: {
 console.log(person.name);
 
 const fruits: string[] = ["Apple", "Banana", "Grape"];
+
+const book: [string, number, boolean] = ["business", 1500, false];
