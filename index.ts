@@ -19,3 +19,7 @@ const person: {
   age: 21,
   isStudent: true,
 };
+
+console.log(person.name);
+
+const fruits: string[] = ["Apple", "Banana", "Grape"];
