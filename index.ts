@@ -38,6 +38,3 @@ const coffee = {
 };
 
 console.log(coffee.size);
-
-const num10 = 10;
-console.log(num10);
