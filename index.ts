@@ -37,4 +37,4 @@ const coffee = {
   size: coffeeSize.venti,
 };
 
-// console.log(coffee.size);
+console.log(coffee.size);
