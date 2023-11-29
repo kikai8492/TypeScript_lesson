@@ -38,3 +38,6 @@ const coffee = {
 };
 
 console.log(coffee.size);
+
+let any: any = "banana";
+console.log(any);
