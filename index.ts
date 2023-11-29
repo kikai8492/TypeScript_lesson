@@ -44,7 +44,7 @@ console.log(any);
 
 let unionType: number | string = 10;
 
-unionType = "Hello";
+unionType = "hoge";
 
 console.log(unionType);
 
