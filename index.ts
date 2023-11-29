@@ -41,3 +41,9 @@ console.log(coffee.size);
 
 let any: any = "banana";
 console.log(any);
+
+let unionType: number | string = 10;
+
+unionType = 3.14;
+
+console.log(unionType);
