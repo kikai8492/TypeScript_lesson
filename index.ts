@@ -44,6 +44,16 @@ console.log(any);
 
 let unionType: number | string = 10;
 
-unionType = 3.14;
+unionType = "Hello";
 
 console.log(unionType);
+
+let unionArr: (number | string | boolean)[] = [21, "kikai", false];
+
+if (unionArr[2] == true) {
+  console.log(`${unionArr[1]}です。年齢は${unionArr[0]}歳です。学生です。`);
+} else {
+  console.log(
+    `${unionArr[1]}です。年齢は${unionArr[0]}歳です。学生ではありません。`
+  );
+}
