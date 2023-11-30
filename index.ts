@@ -60,3 +60,12 @@ if (unionArr[2] == true) {
 
 const apple: "apple" = "apple";
 console.log(apple);
+
+let clothSize: "small" | "medium" | "large" = "medium";
+const cloth: {
+  color: string;
+  size: "small" | "medium" | "large";
+} = {
+  color: "white",
+  size: "large",
+};
