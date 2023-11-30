@@ -57,3 +57,6 @@ if (unionArr[2] == true) {
     `${unionArr[1]}です。年齢は${unionArr[0]}歳です。学生ではありません。`
   );
 }
+
+const apple: "apple" = "apple";
+console.log(apple);
