@@ -61,11 +61,14 @@ if (unionArr[2] == true) {
 const apple: "apple" = "apple";
 console.log(apple);
 
-let clothSize: "small" | "medium" | "large" = "medium";
+type ClothSize = "small" | "medium" | "large";
+let clothSize: ClothSize = "large";
 const cloth: {
   color: string;
-  size: "small" | "medium" | "large";
+  size: ClothSize;
 } = {
   color: "white",
   size: "large",
 };
+
+console.log(cloth.size);
