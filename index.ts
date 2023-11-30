@@ -71,4 +71,4 @@ const cloth: {
   size: "large",
 };
 
-// console.log(cloth.size);
+console.log(cloth.size);
