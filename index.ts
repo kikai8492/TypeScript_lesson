@@ -78,3 +78,9 @@ function add(num1: number, num2: number): number {
 }
 
 add(1, 2);
+
+function sayHello(): void {
+  console.log("Hello!");
+}
+
+console.log(sayHello());
