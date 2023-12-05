@@ -88,3 +88,12 @@ console.log(sayHello());
 let tmpNull: null = null;
 
 const anotherAdd: (n1: number, n2: number) => number = add;
+
+function doubleAndhandle(num: number, cb: (num: number) => number): void {
+  const doubleNum = cb(num * 2);
+  console.log(num * 2);
+}
+
+doubleAndhandle(21, (doubleNum) => {
+  return doubleNum;
+});
