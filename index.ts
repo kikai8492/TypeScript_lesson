@@ -94,6 +94,6 @@ function doubleAndhandle(num: number, cb: (num: number) => number): void {
   console.log(num * 2);
 }
 
-doubleAndhandle(21, (doubleNum) => {
-  return doubleNum;
-});
+// doubleAndhandle(21, (doubleNum) => {
+//   return doubleNum;
+// });
