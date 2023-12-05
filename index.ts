@@ -84,3 +84,5 @@ function sayHello(): void {
 }
 
 console.log(sayHello());
+
+let tmpNull: null = null;
