@@ -86,3 +86,5 @@ function sayHello(): void {
 console.log(sayHello());
 
 let tmpNull: null = null;
+
+const anotherAdd: (n1: number, n2: number) => number = add;
