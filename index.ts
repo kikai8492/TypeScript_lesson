@@ -98,9 +98,9 @@ doubleAndhandle(21, (doubleNum) => {
   return doubleNum;
 });
 
-// let unknownInput: unknown;
-// let anyInput: any;
-// let text: string;
-// unknownInput = "hello";
-// unknownInput = 21;
-// unknownInput = true;
+let unknownInput: unknown;
+let anyInput: any;
+let text: string;
+unknownInput = "hello";
+unknownInput = 21;
+unknownInput = true;
