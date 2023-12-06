@@ -97,3 +97,11 @@ function doubleAndhandle(num: number, cb: (num: number) => number): void {
 doubleAndhandle(21, (doubleNum) => {
   return doubleNum;
 });
+
+let unknownInput: unknown;
+let anyInput: any;
+let text: string;
+unknownInput = "hello";
+unknownInput = 21;
+unknownInput = true;
+text = unknownInput;
