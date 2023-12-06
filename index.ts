@@ -104,4 +104,3 @@ let text: string;
 unknownInput = "hello";
 unknownInput = 21;
 unknownInput = true;
-text = unknownInput;
