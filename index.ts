@@ -115,5 +115,5 @@ class Person {
 const person1 = new Person("Jack");
 console.log(person1);
 
-let lastname = "kikai";
-console.log(lastname);
+// let lastname = "kikai";
+// console.log(lastname);
