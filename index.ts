@@ -48,7 +48,7 @@ unionType = "hoge";
 
 console.log(unionType);
 
-let unionArr: (number | string | boolean)[] = [21, "kikai", false];
+let unionArr: (number | string | boolean)[] = [20, "kikai", false];
 
 if (unionArr[2] == true) {
   console.log(`${unionArr[1]}です。年齢は${unionArr[0]}歳です。学生です。`);
@@ -104,3 +104,13 @@ let text: string;
 unknownInput = "hello";
 unknownInput = 21;
 unknownInput = true;
+
+class Person {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+const person1 = new Person("Jack");
+console.log(person1);
