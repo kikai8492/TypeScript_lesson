@@ -115,9 +115,19 @@ class Person {
 const person1 = new Person("Jack");
 console.log(person1);
 
-const add1 = (num1: number, num2: number) => {
+const add1 = (num1: number, num2: number = 10) => {
   console.log(num1 + num2);
   console.log(num1 * num2);
 };
 
-add1(1, 2);
+add1(2);
+
+const hobbies: string[] = ["Sports", "Cooking"];
+console.log(...hobbies);
+const activeHobbies: string[] = ["Hiking"];
+activeHobbies.push(...hobbies);
+
+const human = {
+  name: "Jack",
+  age: 21,
+};
