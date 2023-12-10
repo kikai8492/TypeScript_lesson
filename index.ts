@@ -127,7 +127,7 @@ console.log(...hobbies);
 const activeHobbies: string[] = ["Hiking"];
 activeHobbies.push(...hobbies);
 
-const human = {
-  name: "Jack",
-  age: 21,
-};
+// const human = {
+//   name: "Jack",
+//   age: 21,
+// };
