@@ -73,8 +73,9 @@ unknownInput = 21;
 unknownInput = true;
 var Person = /** @class */ (function () {
     function Person(name) {
-        console.log(name);
+        this.name = name;
     }
     return Person;
 }());
 var person1 = new Person("Jack");
+console.log(person1);
