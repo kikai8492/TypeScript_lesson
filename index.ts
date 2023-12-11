@@ -127,7 +127,14 @@ console.log(...hobbies);
 const activeHobbies: string[] = ["Hiking"];
 activeHobbies.push(...hobbies);
 
-// const human = {
-//   name: "Jack",
-//   age: 21,
-// };
+const [hobby1, hobby2] = hobbies;
+console.log(hobby1, hobby2);
+
+class Department {
+  name: string;
+  constructor(n: string) {
+    this.name = n;
+    console.log(this.name);
+  }
+}
+new Department("kikai");
