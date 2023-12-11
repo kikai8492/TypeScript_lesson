@@ -130,15 +130,15 @@ activeHobbies.push(...hobbies);
 const [hobby1, hobby2] = hobbies;
 console.log(hobby1, hobby2);
 
-class Department {
-  name: string;
-  constructor(n: string) {
-    this.name = n;
-  }
+// class Department {
+//   name: string;
+//   constructor(n: string) {
+//     this.name = n;
+//   }
 
-  describe() {
-    console.log("Department: " + this.name);
-  }
-}
-const userName = new Department("kikai");
-console.log(userName);
+//   describe() {
+//     console.log("Department: " + this.name);
+//   }
+// }
+// const userName = new Department("kikai");
+// console.log(userName);
