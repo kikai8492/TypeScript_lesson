@@ -134,7 +134,7 @@ class Department {
   name: string;
   constructor(n: string) {
     this.name = n;
-    console.log(this.name);
   }
 }
-new Department("kikai");
+const userName = new Department("kikai");
+console.log(userName);
