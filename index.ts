@@ -130,15 +130,54 @@ activeHobbies.push(...hobbies);
 const [hobby1, hobby2] = hobbies;
 console.log(hobby1, hobby2);
 
+// class Department {
+//   name: string;
+
+//   private enmployees: string[] = [];
+
+//   constructor(n: string) {
+//     this.name = n;
+//   }
+
+//   describe() {
+//     console.log("Department: " + this.name);
+//   }
+
+//   addEmployee(employee: string) {
+//     this.enmployees.push(employee);
+//   }
+
+//   printEmployeeInformation() {
+//     console.log(this.enmployees.length);
+//     console.log(this.enmployees);
+//   }
+// }
+// const userName = new Department("kikai");
+// console.log(userName);
+
+// userName.addEmployee("Jack");
+// userName.addEmployee("Bob");
+
+// userName.describe();
+// userName.printEmployeeInformation();
+
 class Department {
-  name: string;
-  constructor(n: string) {
-    this.name = n;
+  private employees: string[] = [];
+
+  addEmployee(employee: string) {
+    this.employees.push(employee);
   }
 
-  describe() {
-    console.log("Department: " + this.name);
+  printEmployeeInformation() {
+    console.log(this.employees.length);
+    console.log(this.employees);
   }
 }
-const userName = new Department("kikai");
-console.log(userName);
+const userName = new Department();
+
+userName.addEmployee("Jack");
+userName.addEmployee("Bob");
+
+userName.employees[2] = "田中";
+
+userName.printEmployeeInformation();
