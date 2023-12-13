@@ -151,7 +151,7 @@ class Department {
 
 class ITDepartment extends Department {
   constructor(id: number, private admins: string[]) {
-    // super(id, "IT");
+    super(id, "IT");
     this.admins = admins;
   }
 }
