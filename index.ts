@@ -160,24 +160,3 @@ console.log(hobby1, hobby2);
 
 // userName.describe();
 // userName.printEmployeeInformation();
-
-class Department {
-  private employees: string[] = [];
-
-  addEmployee(employee: string) {
-    this.employees.push(employee);
-  }
-
-  printEmployeeInformation() {
-    console.log(this.employees.length);
-    console.log(this.employees);
-  }
-}
-const userName = new Department();
-
-userName.addEmployee("Jack");
-userName.addEmployee("Bob");
-
-userName.employees[2] = "田中";
-
-userName.printEmployeeInformation();
