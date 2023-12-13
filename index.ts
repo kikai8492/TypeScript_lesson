@@ -131,16 +131,12 @@ const [hobby1, hobby2] = hobbies;
 console.log(hobby1, hobby2);
 
 class Department {
-  name: string;
-
   private enmployees: string[] = [];
 
-  constructor(n: string) {
-    this.name = n;
-  }
+  constructor(private readonly id: number, public name: string) {}
 
   describe() {
-    console.log("Department: " + this.name);
+    console.log(`Department: ${this.name} ID: ${this.id}`);
   }
 
   addEmployee(employee: string) {
@@ -152,8 +148,15 @@ class Department {
     console.log(this.enmployees);
   }
 }
-const userName = new Department("kikai");
-console.log(userName);
+
+class ITDepartment extends Department {
+  constructor(id: number, private admins: string[]) {
+    // super(id, "IT");
+    this.admins = admins;
+  }
+}
+
+const userName = new ITDepartment(1, ["kikai"]);
 
 userName.addEmployee("Jack");
 userName.addEmployee("Bob");
