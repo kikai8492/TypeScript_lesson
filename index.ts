@@ -153,6 +153,7 @@ class ITDepartment extends Department {
   constructor(id: number, private admins: string[]) {
     super(id, "IT");
     this.admins = admins;
+    console.log(id, ITDepartment.name, this.admins);
   }
 }
 
@@ -163,3 +164,52 @@ userName.addEmployee("Bob");
 
 userName.describe();
 userName.printEmployeeInformation();
+
+class Gun {
+  constructor(
+    private name: string,
+    private amo: number,
+    private reRoadTime: number
+  ) {}
+}
+
+class AR extends Gun {
+  constructor(name: string, amo: number, reRoadTime: number) {
+    super(name, amo, reRoadTime);
+    console.log(`武器名:${name}`, `残弾数${amo}`, `リロード時間${reRoadTime}`);
+  }
+}
+
+class SMG extends Gun {
+  constructor(name: string, amo: number, reRoadTime: number, gunRate: number) {
+    super(name, amo, reRoadTime);
+    console.log(
+      `武器名:${name}`,
+      `残弾数${amo}`,
+      `リロード時間${reRoadTime}`,
+      `連射速度${gunRate}`
+    );
+  }
+}
+
+const AK47 = new AR("AK47", 30, 0.97);
+const M4A1 = new AR("M4A1", 30, 0.94);
+
+const uzi = new SMG("UZI", 25, 0.45, 100);
+const mp5 = new SMG("MP5", 30, 0.46, 80);
+
+class MathOperations {
+  static add(x: number, y: number) {
+    return x + y;
+  }
+
+  static multiply(x: number, y: number) {
+    return x * y;
+  }
+}
+
+// 静的メソッドの呼び出し
+const sum = MathOperations.add(3, 5); // 8
+console.log(sum);
+const product = MathOperations.multiply(2, 4); // 8
+console.log(product);
