@@ -213,3 +213,25 @@ const sum = MathOperations.add(3, 5); // 8
 console.log(sum);
 const product = MathOperations.multiply(2, 4); // 8
 console.log(product);
+
+abstract class Animal {
+  abstract makeSound(sound: string): void;
+}
+
+class Dog extends Animal {
+  makeSound(sound: string): void {
+    console.log(`Dog: ${sound}`);
+  }
+}
+
+class Cat extends Animal {
+  makeSound(sound: string): void {
+    console.log(`Cat: ${sound}`);
+  }
+}
+
+const dog = new Dog();
+const cat = new Cat();
+
+dog.makeSound("ワン"); // Dog says: ワン
+cat.makeSound("ニャー"); // Cat says: ニャー
