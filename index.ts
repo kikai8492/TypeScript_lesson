@@ -229,7 +229,8 @@ class Cat extends Animal {
     console.log(`Cat: ${sound}`);
   }
 }
-
+// 抽象クラスのインスタンスは作成できない
+// const animal = new Animal(); // エラー
 const dog = new Dog();
 const cat = new Cat();
 
